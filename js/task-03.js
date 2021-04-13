@@ -20,6 +20,8 @@ const galeryEl = document.querySelector('#gallery');
 
 const imagesList = images.map(({ url, alt }) => {
     return `<img src="${url}" alt="${alt}" width = "500 px">`;
-});
+}).join(' ');
+
+console.log(imagesList);
 
 galeryEl.insertAdjacentHTML('beforeend', imagesList);
